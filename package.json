@@ -1,7 +1,7 @@
 {
 	"name": "@saekitominaga/file-size-format",
 	"version": "1.0.0",
-	"description": "Support characters other than \"&\" as URL query separator.",
+	"description": "Expressing file size in a unit system.",
 	"keywords": [
 		"file",
 		"filesize",
