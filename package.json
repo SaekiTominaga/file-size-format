@@ -27,29 +27,20 @@
 		"url": "git+https://github.com/SaekiTominaga/file-size-format.git"
 	},
 	"scripts": {
-		"_build:tsc": "tsc -w",
-		"_build:compress": "onchange -f add -f change -v dist/FileSizeFormat.js -- brotlin compress {{file}} -m 1",
-		"_build:minify": "onchange -f add -f change -v dist/FileSizeFormat.js -- terser {{file}} -o {{fileDir}}/{{fileBaseNoExt}}.min.js -c ecma=2020 --mangle --ecma 2020 --module --source-map content='{{fileDir}}/{{fileBaseNoExt}}.js.map',filename='{{fileBaseNoExt}}.js',includeSources,url='{{fileBaseNoExt}}.min.js.map'",
-		"_build:minify-compress": "onchange -f add -f change -v dist/FileSizeFormat.min.js -- brotlin compress {{file}} -m 1",
-		"_build:minify-declaration": "onchange -f add -f change -v dist/FileSizeFormat.d.ts -- cpy {{file}} dist --rename=FileSizeFormat.min.d.ts",
-		"build": "run-p _build:*",
+		"build": "tsc",
+		"watch": "tsc -w",
 		"test": "jest --coverage"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.22",
 		"@typescript-eslint/eslint-plugin": "^4.19.0",
 		"@typescript-eslint/parser": "^4.19.0",
-		"brotlin": "^1.1.0",
 		"coveralls": "^3.1.0",
-		"cpy-cli": "^3.1.1",
 		"eslint": "^7.23.0",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-jest": "^24.3.2",
 		"eslint-plugin-jsdoc": "^32.3.0",
 		"jest": "^26.6.3",
-		"npm-run-all": "^4.1.5",
-		"onchange": "^7.1.0",
-		"terser": "^5.6.1",
 		"ts-jest": "^26.5.4",
 		"typescript": "^4.2.3"
 	},
