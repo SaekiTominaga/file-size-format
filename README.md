@@ -33,7 +33,7 @@ FileSizeFormat.iec(1208925819614629174706176); // RangeError: `BigInt` should be
 <dl>
 <dt><code>static iec(size: number | bigint, options?: Option): string</code></dt>
 <dd>Expressed with a binary prefix (Byte, KiB, MiB, ...)</dd>
-<dt><code>si(size: number | bigint, options?: Option): string</code></dt>
+<dt><code>static si(size: number | bigint, options?: Option): string</code></dt>
 <dd>Expressed with a SI prefix (Byte, kB, MB, ...)</dd>
 </dl>
 
