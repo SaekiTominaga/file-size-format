@@ -1,7 +1,7 @@
 # Expressing file size in a unit system.
 
 [![npm version](https://badge.fury.io/js/%40saekitominaga%2Ffile-size-format.svg)](https://badge.fury.io/js/%40saekitominaga%2Ffile-size-format)
-[![Build Status](https://www.travis-ci.com/SaekiTominaga/file-size-format.svg)](https://www.travis-ci.com/SaekiTominaga/file-size-format)
+[![Build Status](https://app.travis-ci.com/SaekiTominaga/file-size-format.svg?branch=main)](https://app.travis-ci.com/SaekiTominaga/file-size-format)
 [![Coverage Status](https://coveralls.io/repos/github/SaekiTominaga/file-size-format/badge.svg)](https://coveralls.io/github/SaekiTominaga/file-size-format)
 
 Expresses the size of a file in human-readable units such as `KiB` or `MB`.
